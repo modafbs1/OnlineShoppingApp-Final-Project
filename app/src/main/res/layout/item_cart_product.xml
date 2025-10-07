@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp"
+    android:background="#FFF"
+    android:elevation="2dp"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/cartProductImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_marginStart="10dp"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/cartProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="اسم المنتج"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"/>
+
+        <TextView
+            android:id="@+id/cartProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="₪0"
+            android:textSize="16sp"
+            android:textColor="#555"/>
+
+        <Button
+            android:id="@+id/cartDeleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginTop="6dp"
+            android:backgroundTint="#E57373"
+            android:minHeight="48dp"
+            android:paddingHorizontal="16dp"
+            android:text="إزالة من السلة"
+            android:textColor="#FFF" />
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- إدخال اسم الفئة -->
+    <EditText
+        android:id="@+id/categoryNameEdit"
+        android:hint="اسم الفئة"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- زر لاختيار صورة -->
+    <Button
+        android:id="@+id/selectImageButton"
+        android:text="اختر صورة"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- زر لإضافة الفئة -->
+    <Button
+        android:id="@+id/addCategoryButton"
+        android:text="إضافة الفئة"
+        android:layout_marginTop="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <!-- RecyclerView لعرض الفئات -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/categoryRecycler"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

@@ -1,0 +1,86 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- اسم المنتج -->
+        <EditText
+            android:id="@+id/etProductName"
+            android:hint="اسم المنتج"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- وصف المنتج -->
+        <EditText
+            android:id="@+id/etProductDescription"
+            android:hint="وصف المنتج"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- السعر -->
+        <EditText
+            android:id="@+id/etProductPrice"
+            android:hint="السعر"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- التقييم -->
+        <EditText
+            android:id="@+id/etProductRating"
+            android:hint="التقييم"
+            android:inputType="numberDecimal"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- الفئة -->
+        <Spinner
+            android:id="@+id/spCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:minHeight="48dp" />
+
+        <!-- الموقع -->
+        <EditText
+            android:id="@+id/etLocation"
+            android:hint="الموقع"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- معاينة الصورة -->
+        <ImageView
+            android:id="@+id/ivProductImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="8dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"/>
+
+        <!-- زر اختيار الصورة -->
+        <Button
+            android:id="@+id/btnSelectImage"
+            android:text="اختر صورة"
+            android:layout_marginTop="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <!-- زر إضافة المنتج -->
+        <Button
+            android:id="@+id/btnAddProduct"
+            android:text="إضافة المنتج"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</ScrollView>

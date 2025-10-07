@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "756812046365",
+    "project_id": "onlineshoppingapp-c6517",
+    "storage_bucket": "onlineshoppingapp-c6517.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:756812046365:android:03a7f175b4c969ce1d66f4",
+        "android_client_info": {
+          "package_name": "com.moda.ShoppingApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpjsa-dHVO1FbccUmVfgHelWCnDofjSUQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
