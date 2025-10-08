@@ -1,24 +1,27 @@
-<?xml version="1.0" encoding="utf-8"?>
-<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="#F5F6FA">
+
+<FrameLayout
+    android:id="@+id/userFragmentContainer"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"/>
 
-    <!-- محتوى الفراجمنتات -->
-    <FrameLayout
-        android:id="@+id/userFragmentContainer"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" />
-
-    <!-- القائمة السفلية -->
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/userBottomNav"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        android:background="@color/white"
-        app:itemIconTint="@color/nav_item_color"
-        app:itemTextColor="@color/nav_item_color"
-        app:menu="@menu/user_bottom_menu" />
-
+<com.google.android.material.bottomnavigation.BottomNavigationView
+    android:id="@+id/userBottomNav"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:layout_gravity="bottom"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="16dp"
+    android:background="@drawable/bottom_nav_gradient"
+    app:itemIconTint="@color/bottom_nav_item_color"
+    app:itemTextColor="@color/bottom_nav_item_color"
+    app:menu="@menu/user_bottom_menu"
+    app:labelVisibilityMode="labeled"
+    android:elevation="8dp"/>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

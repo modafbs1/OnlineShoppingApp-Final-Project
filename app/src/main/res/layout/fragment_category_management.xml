@@ -1,34 +1,38 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#F9FAFB"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <!-- إدخال اسم الفئة -->
     <EditText
         android:id="@+id/categoryNameEdit"
         android:hint="اسم الفئة"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="50dp"
+        android:padding="12dp"
+        android:background="@drawable/edittext_bg"
+        android:textColor="#1E293B"
+        android:textColorHint="#6B7280"/>
 
-    <!-- زر لاختيار صورة -->
     <Button
         android:id="@+id/selectImageButton"
         android:text="اختر صورة"
-        android:layout_marginTop="8dp"
+        android:textColor="#3B82F6"
+        android:background="@drawable/button_outline_bg"
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="50dp"/>
 
-    <!-- زر لإضافة الفئة -->
     <Button
         android:id="@+id/addCategoryButton"
         android:text="إضافة الفئة"
-        android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_gradient_bg"
+        android:layout_marginTop="12dp"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="50dp"/>
 
-    <!-- RecyclerView لعرض الفئات -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/categoryRecycler"
         android:layout_marginTop="16dp"

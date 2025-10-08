@@ -1,17 +1,21 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal"
-    android:padding="8dp"
-    android:layout_marginBottom="8dp"
-    android:background="#FFF"
-    android:elevation="3dp"
+    android:padding="12dp"
+    android:layout_marginBottom="12dp"
+    android:background="#FFFFFF"
+    android:elevation="4dp"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:clipToPadding="false">
 
     <ImageView
         android:id="@+id/categoryImage"
         android:layout_width="80dp"
         android:layout_height="80dp"
         android:scaleType="centerCrop"
+        android:background="@drawable/edittext_bg"
+        android:padding="4dp"
         android:src="@drawable/ic_launcher_foreground"/>
 
     <TextView
@@ -19,7 +23,8 @@
         android:text="اسم الفئة"
         android:textSize="18sp"
         android:textStyle="bold"
-        android:layout_marginStart="10dp"
+        android:textColor="#1E293B"
+        android:layout_marginStart="12dp"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_weight="1"/>
@@ -27,13 +32,15 @@
     <ImageView
         android:id="@+id/btnEditCategory"
         android:src="@drawable/ic_edit"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="5dp"/>
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="8dp"
+        android:tint="#0077CC"/>
 
     <ImageView
         android:id="@+id/btnDeleteCategory"
         android:src="@drawable/ic_delete"
-        android:layout_width="30dp"
-        android:layout_height="30dp"/>
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:tint="#E57373"/>
 </LinearLayout>

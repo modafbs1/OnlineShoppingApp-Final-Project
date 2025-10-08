@@ -1,6 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="#F9FAFB"
     android:padding="16dp">
 
     <LinearLayout
@@ -8,79 +9,97 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <!-- اسم المنتج -->
         <EditText
             android:id="@+id/etProductName"
             android:hint="اسم المنتج"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#1E293B"
+            android:textColorHint="#6B7280"
+            android:layout_marginBottom="12dp"/>
 
-        <!-- وصف المنتج -->
         <EditText
             android:id="@+id/etProductDescription"
             android:hint="وصف المنتج"
-            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#1E293B"
+            android:textColorHint="#6B7280"
+            android:layout_marginBottom="12dp"/>
 
-        <!-- السعر -->
         <EditText
             android:id="@+id/etProductPrice"
             android:hint="السعر"
             android:inputType="numberDecimal"
-            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#1E293B"
+            android:textColorHint="#6B7280"
+            android:layout_marginBottom="12dp"/>
 
-        <!-- التقييم -->
         <EditText
             android:id="@+id/etProductRating"
             android:hint="التقييم"
             android:inputType="numberDecimal"
-            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#1E293B"
+            android:textColorHint="#6B7280"
+            android:layout_marginBottom="12dp"/>
 
-        <!-- الفئة -->
         <Spinner
             android:id="@+id/spCategory"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
-            android:minHeight="48dp" />
+            android:layout_height="50dp"
+            android:background="@drawable/edittext_bg"
+            android:layout_marginBottom="12dp"/>
 
-        <!-- الموقع -->
         <EditText
             android:id="@+id/etLocation"
             android:hint="الموقع"
-            android:layout_marginTop="8dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:padding="12dp"
+            android:background="@drawable/edittext_bg"
+            android:textColor="#1E293B"
+            android:textColorHint="#6B7280"
+            android:layout_marginBottom="12dp"/>
 
-        <!-- معاينة الصورة -->
         <ImageView
             android:id="@+id/ivProductImage"
             android:layout_width="match_parent"
-            android:layout_height="180dp"
-            android:layout_marginTop="8dp"
+            android:layout_height="200dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_launcher_foreground"/>
+            android:background="#E5E7EB"
+            android:layout_marginBottom="12dp"
+            android:clipToOutline="true"/>
 
-        <!-- زر اختيار الصورة -->
         <Button
             android:id="@+id/btnSelectImage"
             android:text="اختر صورة"
-            android:layout_marginTop="8dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_gradient_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:layout_marginBottom="12dp"
+            android:textSize="16sp"/>
 
-        <!-- زر إضافة المنتج -->
         <Button
             android:id="@+id/btnAddProduct"
             android:text="إضافة المنتج"
-            android:layout_marginTop="10dp"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_gradient_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="50dp"
+            android:textSize="16sp"/>
 
     </LinearLayout>
 </ScrollView>

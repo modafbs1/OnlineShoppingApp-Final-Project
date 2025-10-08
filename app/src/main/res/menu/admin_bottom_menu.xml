@@ -1,20 +1,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
     <item
         android:id="@+id/nav_products"
         android:title="المنتجات"
         android:icon="@drawable/ic_home" />
+
     <item
         android:id="@+id/nav_categories"
         android:title="الفئات"
         android:icon="@drawable/ic_category" />
+
     <item
         android:id="@+id/nav_add"
         android:title="إضافة"
         android:icon="@drawable/ic_add" />
+
     <item
         android:id="@+id/nav_stats"
         android:title="الإحصائيات"
         android:icon="@drawable/ic_chart" />
+
     <item
         android:id="@+id/nav_admin_profile"
         android:title="الملف الشخصي"

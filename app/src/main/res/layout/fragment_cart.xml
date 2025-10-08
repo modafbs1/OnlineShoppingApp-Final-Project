@@ -2,21 +2,20 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="10dp">
+    android:background="#F9FAFB"
+    android:padding="16dp">
 
-    <!-- 🛍️ العنوان -->
     <TextView
         android:id="@+id/titleText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="🛒 سلة المشتريات"
+        android:text="سلة المشتريات"
         android:textSize="22sp"
         android:textStyle="bold"
-        android:layout_marginBottom="8dp"
+        android:textColor="#1E293B"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <!-- 🔽 المحتوى القابل للتمرير -->
     <ScrollView
         android:id="@+id/scrollContainer"
         android:layout_width="0dp"
@@ -31,9 +30,10 @@
         <LinearLayout
             android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp">
 
-            <!-- 🧾 قائمة المنتجات -->
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerViewCart"
                 android:layout_width="match_parent"
@@ -41,26 +41,28 @@
                 android:nestedScrollingEnabled="false"
                 android:contentDescription="قائمة المشتريات" />
 
-            <!-- 💰 الإجمالي -->
             <TextView
                 android:id="@+id/totalPriceText"
-                android:text="الإجمالي: ₪0"
+                android:text="الإجمالي: 0"
                 android:textSize="18sp"
+                android:textColor="#1E293B"
+                android:textStyle="bold"
                 android:layout_marginTop="12dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
     </ScrollView>
 
-    <!-- 💳 زر الدفع الثابت -->
     <Button
         android:id="@+id/checkoutButton"
-        android:text="متابعة الدفع 💳"
+        android:text="متابعة الدفع"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/button_gradient_bg"
         android:textSize="16sp"
-        android:layout_marginTop="8dp"
-        android:layout_marginBottom="50dp"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="80dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

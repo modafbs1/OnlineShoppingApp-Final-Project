@@ -1,5 +1,6 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:padding="16dp"
+    android:background="#F9FAFB"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -9,11 +10,12 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:text="💳 طريقة الدفع"
+            android:text="طريقة الدفع"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="22sp"
             android:textStyle="bold"
+            android:textColor="#1E293B"
             android:layout_marginBottom="12dp"/>
 
         <RadioGroup
@@ -26,23 +28,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:text="الدفع بواسطة بطاقة ائتمانية" />
+                android:text="الدفع بواسطة بطاقة ائتمانية"
+                android:textColor="#1E293B"/>
 
             <RadioButton
                 android:id="@+id/cashPayment"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:minHeight="48dp"
-                android:text="الدفع نقدًا عند التسليم" />
+                android:text="الدفع نقدًا عند التسليم"
+                android:textColor="#1E293B"/>
         </RadioGroup>
+
         <TextView
             android:id="@+id/totalAmountText"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="الإجمالي الكلي: ₪0"
             android:textSize="18sp"
+            android:textColor="#1E293B"
             android:layout_marginBottom="10dp"/>
-
 
         <LinearLayout
             android:id="@+id/cardDetailsLayout"
@@ -56,27 +61,42 @@
                 android:hint="رقم البطاقة"
                 android:inputType="number"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="#1E293B"
+                android:textColorHint="#6B7280"/>
 
             <EditText
                 android:hint="تاريخ الانتهاء (MM/YY)"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="#1E293B"
+                android:textColorHint="#6B7280"/>
 
             <EditText
                 android:hint="CVV"
                 android:inputType="numberPassword"
                 android:layout_marginTop="8dp"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="50dp"
+                android:padding="12dp"
+                android:background="@drawable/edittext_bg"
+                android:textColor="#1E293B"
+                android:textColorHint="#6B7280"/>
         </LinearLayout>
 
         <Button
             android:id="@+id/payButton"
             android:text="تأكيد الدفع"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_gradient_bg"
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"/>
+            android:layout_height="55dp"
+            android:textSize="16sp"/>
     </LinearLayout>
 </ScrollView>

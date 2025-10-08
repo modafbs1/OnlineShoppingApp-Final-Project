@@ -1,6 +1,7 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#F9FAFB"
     android:padding="16dp">
 
     <LinearLayout
@@ -12,24 +13,28 @@
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
+            android:background="#3B82F6"
             android:title="تفاصيل المنتج"
-            android:titleTextColor="@android:color/white"/>
+            android:titleTextColor="#FFFFFF"/>
 
         <ImageView
             android:id="@+id/detailImage"
             android:layout_width="match_parent"
-            android:layout_height="220dp"
-            android:scaleType="centerCrop" />
+            android:layout_height="250dp"
+            android:scaleType="centerCrop"
+            android:layout_marginTop="16dp"
+            android:background="#E5E7EB"
+            android:clipToOutline="true"/>
 
         <TextView
             android:id="@+id/detailName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="اسم المنتج"
-            android:textSize="22sp"
+            android:textSize="24sp"
             android:textStyle="bold"
-            android:layout_marginTop="12dp"/>
+            android:textColor="#1E293B"
+            android:layout_marginTop="16dp"/>
 
         <TextView
             android:id="@+id/detailPrice"
@@ -46,6 +51,7 @@
             android:layout_height="wrap_content"
             android:text="وصف المنتج"
             android:textSize="16sp"
+            android:textColor="#6B7280"
             android:layout_marginTop="8dp"/>
 
         <TextView
@@ -75,33 +81,42 @@
 
         <Button
             android:id="@+id/addToCart"
-            android:text="أضف إلى السلة 🛒"
+            android:text="أضف إلى السلة"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_gradient_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"/>
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/addToFav"
-            android:text="أضف إلى المفضلة ❤️"
+            android:text="أضف إلى المفضلة"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/button_gradient_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/editProduct"
-            android:text="تعديل المنتج ✏️"
-            android:backgroundTint="#FFD54F"
+            android:text="تعديل المنتج"
+            android:textColor="#1E293B"
+            android:background="@drawable/button_outline_bg"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="12dp"/>
+            android:layout_height="50dp"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp"/>
 
         <Button
             android:id="@+id/deleteProduct"
-            android:text="حذف المنتج 🗑️"
+            android:text="حذف المنتج"
+            android:textColor="#FFFFFF"
             android:backgroundTint="#E57373"
-            android:textColor="#FFF"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"/>
+            android:layout_height="50dp"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp"/>
     </LinearLayout>
 </ScrollView>
